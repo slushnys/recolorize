@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Recolorize</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+    <style lang="style/css">
+    form { padding: 20%; }
+    .custom-file-input::-webkit-file-upload-button {
+      visibility: hidden;
+    }
+    .custom-file-input::before {
+      content: 'Select some files';
+      display: inline-block;
+      background: linear-gradient(top, #f9f9f9, #e3e3e3);
+      border: 1px solid #999;
+      border-radius: 3px;
+      padding: 5px 8px;
+      outline: none;
+      white-space: nowrap;
+      -webkit-user-select: none;
+      cursor: pointer;
+      text-shadow: 1px 1px #fff;
+      font-weight: 700;
+      font-size: 10pt;
+    }
+    .custom-file-input:hover::before {
+      border-color: black;
+    }
+    .custom-file-input:active::before {
+      background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+    }
+    </style>
+  </head>
+  <body>
+    <div style="text-align:center; font-family: 'Roboto', sans-serif; font-size: 50px;"><span style="color: #e658e6;">Re<span style="color: #6897ef;">color</span>ize</span></div>
+    <form  action="/" enctype="multipart/form-data" method="post">
+      <div>
+        <input type="file" accept="image/*" name="file" style="border-bottom: 1px solid gray; padding: 10px;" />
+      </div>
+      <div style="padding-top: 20px;">
+        <button type="submit" style="width: 100%; padding: 20px; color: white; border:0px; background-color: lightblue;" >Upload</button>
+      </div>
+    </form>
+    <div style="color:red; text-align:center;">
+      {% if error %} {{ error }} {% endif %}
+    </div>
+  </body>
+</html>
