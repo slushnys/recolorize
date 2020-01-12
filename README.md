@@ -2,6 +2,10 @@
 
 The function of this application is simply to turn a colorful image to a black and white one and then recolorize it back to colorful into a video.
 
+## Demo
+
+![https://im2.ezgif.com/tmp/ezgif-2-d6b8a6438639.gif](https://im2.ezgif.com/tmp/ezgif-2-d6b8a6438639.gif)
+
 ## Requirements
 
 `pipenv Python 3.7 Flask PIL`
@@ -27,7 +31,7 @@ pipenv install
 
 pipenv shell
 
-DEBUG=1 python convert_imageio.py
+DEBUG=1 python main.py
 ```
 
 ## Docker
