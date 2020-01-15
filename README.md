@@ -4,7 +4,7 @@ The function of this application is simply to turn a colorful image to a black a
 
 ## Demo
 
-![https://im2.ezgif.com/tmp/ezgif-2-daae2f847f2c.gif](https://im2.ezgif.com/tmp/ezgif-2-daae2f847f2c.gif)
+![https://s5.gifyu.com/images/ezgif.com-video-to-gif63987a517ab84e6f.gif](https://s5.gifyu.com/images/ezgif.com-video-to-gif63987a517ab84e6f.gif)
 
 ## Requirements
 
